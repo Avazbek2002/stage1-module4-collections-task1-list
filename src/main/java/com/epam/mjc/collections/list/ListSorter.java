@@ -6,7 +6,7 @@ import java.util.List;
 public class ListSorter {
     public void sort(List<String> sourceList) {
         ListComparator compare = new ListComparator();
-        compare.quickSort(sourceList, 0, sourceList.size());
+        compare.quickSort(sourceList, 0, sourceList.size() - 1);
     }
 }
 
