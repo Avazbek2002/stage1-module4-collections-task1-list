@@ -5,5 +5,14 @@ import java.util.List;
 
 public class ArrayListCreator {
     public ArrayList<String> createArrayList(List<String> sourceList) {
+        ArrayList <String> hello = new ArrayList<>();
+        for (int i = 0; i < sourceList.size(); i++) {
+            if ((i + 1) % 3 == 0) {
+                hello.add(sourceList.get(i));
+                hello.add(sourceList.get(i));
+            }
+        }
+
+        return hello;
     }
 }
